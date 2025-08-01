@@ -25,9 +25,9 @@ function atualizarLista( ){
     lista.innerHTML = '';
 
     for (let i = 0; i < amigos.length; i++) {
-        const item = document.createElement("li");     // Cria <li>
-            item.textContent = amigos[i];              // Define o texto
-            lista.appendChild(item);                   // Adiciona ao <ul>
+        const item = document.createElement("li");    
+            item.textContent = amigos[i];              
+            lista.appendChild(item);                  
     }
 }
 
@@ -38,7 +38,7 @@ function sortearAmigo() {
         console.log(nomeSorteado);
         
         const resultado = document.getElementById("resultado");
-        resultado.innerHTML = ''; // limpa antes de exibir novo
+        resultado.innerHTML = ''; 
 
         const item = document.createElement("li");
         item.textContent = `Amigo sorteado: ${nomeSorteado}`;
